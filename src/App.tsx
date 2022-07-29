@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
+import { Header } from "./components";
 import { ThemeInitialStateType } from "./redux/types";
 import { darkTheme, lightTheme } from "./styles";
 
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+      <Header />
     </ThemeProvider>
   );
 }
