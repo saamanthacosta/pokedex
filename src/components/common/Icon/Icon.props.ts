@@ -6,4 +6,5 @@ export interface IconType {
 
 export interface Props extends HTMLAttributes<SVGSVGElement> {
   type: string;
+  size?: number;
 }
