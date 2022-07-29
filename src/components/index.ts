@@ -1,1 +1,1 @@
-export { Typography } from "./common";
+export { Card, Typography } from "./common";
