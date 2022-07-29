@@ -1,5 +1,5 @@
 import { useGetTextByLanguage } from "../../hooks";
-import { StyledHeader, Container, Title } from "./Header.style";
+import SwitchTheme from "./SwitchTheme";
 
 const Header = () => {
   const getTextByLanguage = useGetTextByLanguage();
@@ -8,6 +8,7 @@ const Header = () => {
     <StyledHeader>
       <Container>
         <Title>{getTextByLanguage("header:name")}</Title>
+        <SwitchTheme />
       </Container>
     </StyledHeader>
   );
