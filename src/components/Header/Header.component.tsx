@@ -26,7 +26,7 @@ const Header = (props: Props) => {
         type="text"
         onChange={(event) => handleOnChange(event)}
         placeholder={getTextByLanguage("header-filter:placeholder")}
-        aria-label={getTextByLanguage("header-filter:accessibility")}
+        aria-labelledby={getTextByLanguage("header-filter:accessibility")}
       />
     </StyledHeader>
   );
