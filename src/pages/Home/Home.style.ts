@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import { Typography } from "../../components";
 import { devices } from "../../styles";
 
 export const StyledHome = styled.div`
   font-size: 11px;
+  padding-top: 13em;
   background-color: ${({ theme }) => theme.palette.background};
   @media ${devices.mobile} {
     font-size: 12.5px;
@@ -13,10 +15,14 @@ export const StyledHome = styled.div`
 `;
 
 export const PokemonsList = styled.div`
-  padding-top: 13em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
 `;
+
+export const EmptyList = styled(Typography)`
+margin-top: 1em;
+font-size: 2em;
+`
