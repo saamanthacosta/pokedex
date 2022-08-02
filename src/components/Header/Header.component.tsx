@@ -19,13 +19,14 @@ const Header = (props: Props) => {
   return (
     <StyledHeader>
       <Container>
-        <Title>{getTextByLanguage("header:name")}</Title>
+        <Title tabIndex={0}>{getTextByLanguage("header:name")}</Title>
         <SwitchTheme />
       </Container>
       <Filter
         type="text"
-        placeholder={getTextByLanguage("header-filter:placeholder")}
         onChange={(event) => handleOnChange(event)}
+        placeholder={getTextByLanguage("header-filter:placeholder")}
+        aria-label={getTextByLanguage("header-filter:accessibility")}
       />
     </StyledHeader>
   );
